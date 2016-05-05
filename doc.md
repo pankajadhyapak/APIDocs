@@ -107,23 +107,28 @@ Current user with friend list
 
 
 ```
-[
-  {
-    "id": 2,
-    "name": "Kartik",
-    "email": "kartik.tanksali@gmail.com",
-    "created_at": "2016-03-17 10:57:23",
-    "updated_at": "2016-03-17 10:57:23",
-    "isFriend": true
-  },
-  {
-    "id": 3,
-    "name": "Pooja ",
-    "email": "Pooja@gmail.com",
-    "created_at": "2016-04-05 08:16:56",
-    "updated_at": "2016-04-05 08:16:56",
-    "isFriend": true
-  },
+{
+  "id": 1,
+  "name": "pankaj",
+  "email": "pankaj@w3effects.com",
+  "created_at": "2016-03-17 10:42:21",
+  "updated_at": "2016-03-17 10:42:21",
+  "friends": [
+    {
+      "id": 2,
+      "name": "Kartik",
+      "email": "kartik.tanksali@gmail.com",
+      "created_at": "2016-03-17 10:57:23",
+      "updated_at": "2016-03-17 10:57:23",
+      "pivot": {
+        "user_id": 1,
+        "friend_id": 2,
+        "status": "ACCEPTED",
+        "created_at": "2016-05-05 22:21:36",
+        "updated_at": "2016-05-05 22:21:36"
+      }
+    }
+ ]
 ```
 To display in all doctors tab, when clicked on add friend button or icon `friend_id` is id of the clicked doctor
 
@@ -136,8 +141,7 @@ To display in all doctors tab, when clicked on add friend button or icon `friend
 
 ###Response
 
-
-Current user with friend list
+Doctor list of sent Request
 
 
 ```
@@ -175,23 +179,28 @@ Current user with friend list
 
 
 ```
-[
-  {
-    "id": 2,
-    "name": "Kartik",
-    "email": "kartik.tanksali@gmail.com",
-    "created_at": "2016-03-17 10:57:23",
-    "updated_at": "2016-03-17 10:57:23",
-    "isFriend": true
-  },
-  {
-    "id": 3,
-    "name": "Pooja ",
-    "email": "Pooja@gmail.com",
-    "created_at": "2016-04-05 08:16:56",
-    "updated_at": "2016-04-05 08:16:56",
-    "isFriend": true
-  },
+{
+  "id": 1,
+  "name": "pankaj",
+  "email": "pankaj@w3effects.com",
+  "created_at": "2016-03-17 10:42:21",
+  "updated_at": "2016-03-17 10:42:21",
+  "friends": [
+    {
+      "id": 2,
+      "name": "Kartik",
+      "email": "kartik.tanksali@gmail.com",
+      "created_at": "2016-03-17 10:57:23",
+      "updated_at": "2016-03-17 10:57:23",
+      "pivot": {
+        "user_id": 1,
+        "friend_id": 2,
+        "status": "ACCEPTED",
+        "created_at": "2016-05-05 22:21:36",
+        "updated_at": "2016-05-05 22:21:36"
+      }
+    }
+  ]
 ```
 To display in all Requests tab, when clicked on Accept button or icon `friend_id` is id of the clicked doctor
 
